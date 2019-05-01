@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Kiona-Regular;
+  src: url(Kiona-Regular.ttf);
+	
+}body, html {
+  width: 100%; height: 100%;
+  margin: 0;
+  image-rendering:optimizeSpeed;
+  image-rendering:-moz-crisp-edges;
+  image-rendering:-o-crisp-edges;
+  image-rendering:-webkit-optimize-contrast;
+  image-rendering:crisp-edges;
+  -ms-interpolation-mode:bicubic;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+#nav {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+}
+header {
+	background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.3));
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 0px #616161;
+    position: relative;    
+}
+li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #424242;
+    position: relative;
+}
+
+.bar {
+    width: 70%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    margin: 0 auto;
+    align-content: center;
+}
+.bar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.container{
+ margin: 0 auto;
+	
+}
+#button {
+    float: center;
+    position: relative;
+    width: 120px;
+    height: 50px;
+    padding: 6px;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: 30%;
+    margin-bottom: auto;
+    background-color: #0c9948;
+    font-size: 17px;
+    border: 1px solid #07652F;
+    border-radius: 5px;
+    color: #FFFFFF;	
+}
+#search {
+	float: none;
+    display: block;
+	position: absolute;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 14px;
+	border: 1px solid #ccc;  
+	border-radius: 40px;
+
+
+
+}
+#slogan {
+    line-height: 60px;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: -25%;
+    margin-bottom: 30px;
+}
