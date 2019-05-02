@@ -14,20 +14,22 @@ $(document).ready(function() {
                     // $(".container").append($('<img>').attr('src','https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg'));
                     
                    for (var i=0; i< result.hits.length; i++){
-                    $(".container").append($('<h1>').text(result.hits[i].recipe.label));
-                    $(".container").append($('<img>').attr('src',result.hits[i].recipe.image));
+                    var  $div= $('<div/>').addClass('grid');
+                    $(".container").append($div)
+                    $div.append($('<h1>').addClass('lable').text(result.hits[i].recipe.label));
+                    $div.append($('<img>').addClass('img').attr('src',result.hits[i].recipe.image));
 
                     result.hits[i].recipe.healthLabels.forEach(function(element) {
                         console.log(element)
-                        $(".container").append($('<p>').attr(element));
+                        $div.append($('<p>').addClass('health').attr(element));
                     })
                     result.hits[i].recipe.ingredients.forEach(function(element) {
                         console.log(element)
-                        $(".container").append($('<p>').text(element.text));
+                        $div.append($('<p>').addClass('ingreed').text(element.text));
                     })
                     result.hits[i].recipe.dietLabels.forEach(function(element) {
                         console.log(element)
-                        $(".container").append($('<p>').text(element));
+                        $div.append($('<p>').addClass('diet').text(element));
                     })
                    }
  
